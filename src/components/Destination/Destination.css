@@ -1,0 +1,26 @@
+.formshow{
+    border-radius:0.85rem;
+    background-color:#FFFFFF;
+}
+.error{
+    color:red;
+}
+.inputform{
+    background-color:#FFFAFA;
+}
+.searchdatashow{
+    border-radius:2rem!important;
+    /* border-radius:2px 2px 2px ghostwhite; */
+
+}
+.destinationViewStyle{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    border-radius:0.60rem;
+}
+.hrStyle{
+    border-bottom:1px solid gray;
+}
+.nameCard{
+    border-radius:0.80rem!important;
+}

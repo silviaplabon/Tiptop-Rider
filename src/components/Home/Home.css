@@ -1,0 +1,11 @@
+.vehiclesContainer{
+    padding-top:10%;
+    padding-bottom:20%;
+}
+.homeContainer{
+   /* min-height:100vh; */
+   background-image:url("../../photos/Bg.png");
+   background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-attachment: fixed; 
+}

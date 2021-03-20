@@ -1,0 +1,108 @@
+a {
+    color: black!important;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.liHeaderStyle {
+    list-style-type: none!important;
+}
+
+.navbarCollapseStyle {
+    text-align: center;
+}
+.nameShow{
+        padding:0px!important;
+        background-color:orange!important;
+        border-radius:0.65rem!important;
+    }
+@media (max-device-width:435px){
+    .navStyle {
+        padding:30px  5px!important;
+        margin:0  5px!important;
+    }
+    a {
+        font-size: 13px;
+    }
+    .liHeaderStyle {
+        padding: 3px;
+    }
+    .linkStyle{
+        padding:0px;
+    }
+}
+@media only screen and (min-device-width:763px) and (max-device-width: 2000px)  {
+    .nameShow{
+        padding-left:1rem!important;
+        padding-right:1rem!important;
+    }
+}
+@media only screen and (min-device-width:200px) and (max-device-width: 763px)  {
+    .nameShow{
+        padding-left:0.5rem!important;
+        padding-right:0.5rem!important;
+    }
+}
+
+
+@media only screen and (min-device-width: 436px) and (max-device-width: 624px)  {
+    .navStyle {
+        padding:24px  24px!important;
+        margin: 0 24px!important;
+    }
+    a {
+        font-size: 15px;
+    }
+    .liHeaderStyle {
+        padding: 5px;
+    }
+    .linkStyle{
+        padding:5px;
+    }
+    
+}
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 450px) {
+    a {
+        font-size: 10px!important;
+    }
+}
+
+/* {
+    "_id": "6054566b22fdb1cb5ce6e0c0",
+    "picture": "https://i.ibb.co/rGFXLp5/4train.jpg",
+    "carname": "Train",
+    "company": "EMTRAC",
+    "email": "mcguirenelson@emtrac.com",
+    "phone": "+1 (830) 509-3818",
+    "address": "771 Kingsland Avenue, Guilford, Puerto Rico, 6411"
+}
+
+{
+    "_id": "6054566b640dc215fda22884",
+    "picture": "https://i.ibb.co/P582Jgm/6ambulance.jpg2",
+    "carname": "Ambulance",
+    "company": "PRINTSPAN",
+    "email": "suarezwhitaker@printspan.com",
+    "phone": "+1 (837) 445-3149",
+    "address": "661 Maple Avenue, Hasty, Kentucky, 6724"
+},
+{
+    "_id": "6054566bece919cb190a091b",
+    "picture": "https://i.ibb.co/LhM9CFB/7bus.jpg",
+    "carname": "Bus",
+    "company": "PORTICA",
+    "email": "maviswilliamson@portica.com",
+    "phone": "+1 (857) 431-3955",
+    "address": "852 Decatur Street, Riceville, Rhode Island, 1069"
+}
+,
+{
+    "_id": "6054566bbedb553e7853eed1",
+    "picture": "https://i.ibb.co/0Q8VgTj/8car.jpg",
+    "carname": "Car",
+    "company": "COMTENT",
+    "email": "carrillolittle@comtent.com",
+    "phone": "+1 (939) 522-2442",
+    "address": "168 Times Placez, Leyner, Arkansas, 8037"
+} */
