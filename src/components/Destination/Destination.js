@@ -9,6 +9,7 @@ import Header from '../Header/Header';
 const Destination = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     let carname = useParams();
+
     const [vehicle, setVehicle] = useState({});
     useEffect(() => {
         setVehicle(fakedata.find(pd => carname === pd.carname));
@@ -17,7 +18,7 @@ const Destination = () => {
     const { register, handleSubmit, watch, errors } = useForm();
     let [searchData, setsearchData] = useState({});
     let onSubmit = data => { setsearchData(data) }
-
+console.log(vehicle);
 
     return (
         <div className="container m-auto">
@@ -84,15 +85,14 @@ const Destination = () => {
                         </div>
 
                 }
-                <div className="col-md-7 mt-5 container m-auto" id="map">
+                <div className="col-md-7 mt-5 container m-auto" id="">
                 {/* AIzaSyBXtJ8vnXNTmwDDgQw_q0_WlmUPP8cch9A */}
-                    {/* <iframe
+                    <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7496723.66068468!2d85.84616609221882!3d23.442075849009655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1616220108015!5m2!1sen!2sbd"
                         className="w-100 "
                         title="bangladesh"
                         style={{ border: "0", height: "30rem" }}
-                        loading="lazy"></iframe> */}
-                        {/* <img src={map}/> */}
+                        loading="lazy"></iframe> 
 
                 </div>
             </div >
