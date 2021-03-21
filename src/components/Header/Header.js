@@ -4,38 +4,36 @@ import { UserContext } from '../../App';
 import './Header.css'
 const Header = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-  console.log(loggedInUser,"silvialogin")
+  console.log(loggedInUser, "silvialogin")
   return (
-    <nav className="navbar navbar-expand navbar-light  navStyle pb-1 pt-5 mx-5 px-5">
-      <div className="container-fluid">
-        <div className="collapse navbar-collapse navbarCollapseStyle d-flex flex-row-reverse text-center" >
-          <ul className="navbar-nav ulHeaderStyle text-center">
-            <li className="nav-item liHeaderStyle  btn">
-              <Link to="/" className="text-decoration-none linkStyle">Home</Link>
-            </li>
-            <li className="nav-item liHeaderStyle btn">
-              <Link to="/vehicle/Motor_Bike" className="text-decoration-none linkStyle">Destination</Link>
-            </li>
-            <li className="nav-item liHeaderStyle btn">
-              <Link to="/blog" className=" text-decoration-none   linkStyle">Blog</Link>
-            </li>
-            <li className="nav-item liHeaderStyle btn">
-              <Link to="/contact" className="text-decoration-none linkStyle">Contact</Link>
-            </li>
-            {
-              loggedInUser.email ?
-              (loggedInUser.displayName ?  <button onClick={() => setLoggedInUser({})} className="nameShow">{loggedInUser.displayName}</button>:
-              <button onClick={() => setLoggedInUser({})} className="nameShow ">{loggedInUser.email}</button>):
-                <li className="nav-item liHeaderStyle btn btn-primary">
-                    <Link to="/login" className="text-decoration-none  linkStyle ">Login</Link>
-                </li>
-            }
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-light  navbarDesign container pt-5">
+        <div className="container-fluid">
+          <h2 className="navbar-brand text-warning" href="#">Tiptop Rides</h2>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/Motor_Bike/destination" className="nav-link">Destination</Link>
+              <Link to="/blog" className=" nav-link">Blog</Link>
+              <Link to="/contact" className="nav-link">Contact</Link>
 
-          </ul>
+              {loggedInUser.email && (loggedInUser.displayName ? <button className="btn btn-warning me-2">{loggedInUser.displayName}</button>
+                : <button className="btn btn-warning me-2">{loggedInUser.email}</button>)}
+
+              {loggedInUser.email ? <button onClick={() => setLoggedInUser({})} className="btn btn-warning logStyle me-1">Logout</button> :
+                <Link to="/login" className="btn btn-warning me-1">Login</Link>
+              }
+
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
+
 
 export default Header;

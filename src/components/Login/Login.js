@@ -30,6 +30,10 @@ const Login = () => {
 
   const handleChange = event => {
     let isFormValid;
+    if (event.target.name === 'displayName') {
+      isFormValid = /^[a-zA-Z\s\.]*$/.test(event.target.value);
+      console.log(isFormValid)
+    }
     if (event.target.name === 'email') {
       isFormValid = /\S+@\S+\.\S+/.test(event.target.value);
       console.log(isFormValid)
@@ -58,6 +62,7 @@ const Login = () => {
           .then(res => {
             handleResponse(res, true)
             updateUsername(user.displayName)
+            console.log(user.displayName,"silvia why error")
           })
           .catch(error => console.log(error))
       }
@@ -121,11 +126,11 @@ const Login = () => {
             {authState ? <h5>Login</h5> : <h5 className=" ">Sign Up</h5>}
 
             <form onSubmit={handleSubmit(onSubmit)} id="formsignup" className="">
-              {!authState && <input type="text" onBlur={handleChange} name="name" placeholder="Your Name" id="inputName" className="form-control mt-3"
+              {!authState && <input type="text" onBlur={handleChange} name="displayName" placeholder="Your Name" id="inputName" className="form-control mt-3"
                 ref={register({ required: true, pattern: {
                   value:/^[a-zA-Z\s\.]*$/,
-                  message:"*Please Provide a valid name" },})} />}
-              {errors.name && <span className="error">{errors.name.message}</span>}
+                  message:"*Please Provide a valid name using  only alphabet" },})} />}
+              {errors.displayName && <span className="error">{errors.displayName.message}</span>}
 
 
 
@@ -150,11 +155,11 @@ const Login = () => {
             </form>
             {
               authState ?
-                <h5>Don't Have an account?<a className="loginAnchor text-decoration-none" onClick={() => setAuthState(!authState)}>Sign UP</a> </h5> :
-                <h5>Already Have an account?<a className="loginAnchor text-decoration-none " onClick={() => setAuthState(!authState)}>Sign In</a></h5>
+                <h6 className="fw-light">Don't Have an account?<a className="loginAnchor fw-light  btn text-decoration-none" onClick={() => setAuthState(!authState)}> Sign Up</a> </h6> :
+                <h6 className="fw-light">Already Have an account?<a className="loginAnchor btn fw-light text-decoration-none " onClick={() => setAuthState(!authState)}> Sign In</a></h6>
             }
           </div>
-
+          
           {
             loggedInUser.error && <p className="text-warning">{loggedInUser.error}</p>
           }

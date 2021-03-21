@@ -12,7 +12,7 @@ import Login from './components/Login/Login';
 import Home from './components/Home/Home';
 import Destination from './components/Destination/Destination';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-export const UserContext=createContext();
+export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -26,7 +26,7 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <PrivateRoute path="/vehicle/:carname">
+          <PrivateRoute path="/:carname/destination">
             <Destination />
           </PrivateRoute>
           {/* 

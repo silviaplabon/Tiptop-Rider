@@ -2,7 +2,7 @@
     {
         "id": "19981",
         "picture": "https://i.ibb.co/SPMkN3v/1-MOTORBIKE.jpg",
-        "carname": "Motor_Bike",
+        "carname":"Motor_Bike",
         "company": "EXOZENT",
         "email": "raymondmcintosh@exozent.com",
         "phone": "+1 (998) 566-2286",
@@ -11,7 +11,7 @@
     {
         "id": "19982",
         "picture": "https://i.ibb.co/nDjzqT4/boat2.gif",
-        "carname": "Boat",
+        "carname":"Boat",
         "company": "ORBIXTAR",
         "email": "soliscooper@orbixtar.com",
         "phone": "+1 (810) 560-3639",
@@ -20,7 +20,7 @@
     {
         "id": "19983",
         "picture": "https://i.ibb.co/PCP399h/3doubledecker.jpg",
-        "carname": "Double_Decker",
+        "carname":"Double_Decker",
         "company": "REMOTION",
         "email": "kayeprince@remotion.com",
         "phone": "+1 (894) 531-2626",
@@ -30,7 +30,7 @@
     {
         "id": "19984",
         "picture": "https://i.ibb.co/r3BBJtk/bullet2.jpg",
-        "carname": "Bullet_Train",
+        "carname":"Bullet_Train",
         "company": "MAKINGWAY",
         "email": "marionhowe@makingway.com",
         "phone": "+1 (969) 507-2846",
