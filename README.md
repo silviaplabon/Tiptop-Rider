@@ -13,15 +13,15 @@ Live link: [Tiptop Rides](https://modest-euclid-ecd574.netlify.app/).
 
 3.Shows dynamic home page .
 
-4.Use Route parameter dynamically
+4.Use Route parameter dynamically.
 
-5.Used fontAwesome Icons
+5.Used fontAwesome Icons.
 
 6.Used Bootstrap
 
-7.Used Conditional formatting
+7.Used Conditional formatting.
 
 8.Fully Responsive 
 
-9.Used destructuring and props
+9.Used destructuring and props.
 

@@ -155,11 +155,11 @@ const Login = () => {
             </form>
             {
               authState ?
-                <h6 className="fw-light">Don't Have an account?<a className="loginAnchor fw-light  btn text-decoration-none" onClick={() => setAuthState(!authState)}> Sign Up</a> </h6> :
-                <h6 className="fw-light">Already Have an account?<a className="loginAnchor btn fw-light text-decoration-none " onClick={() => setAuthState(!authState)}> Sign In</a></h6>
+                <h6 className="fw-light mt-1">Don't Have an account?<a className="loginAnchor fw-bold fw-lighter  btn text-decoration-none text-warning" onClick={() => setAuthState(!authState)}> Sign Up</a> </h6> :
+                <h6 className="fw-light mt-1">Already Have an account?<a className="loginAnchor btn fw-bold text-decoration-none text-warning " onClick={() => setAuthState(!authState)}> Sign In</a></h6>
             }
           </div>
-          
+
           {
             loggedInUser.error && <p className="text-warning">{loggedInUser.error}</p>
           }
