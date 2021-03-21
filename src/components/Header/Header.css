@@ -16,15 +16,15 @@ a {
         background-color:orange!important;
         border-radius:0.65rem!important;
     }
+.buttonStyleHeader{
+    border-radius:0.70rem!important;
+}
 @media (max-device-width:991px){
     .logStyle{
         margin-top:0.65rem!important;
-
     }
 }
-@media only screen and (min-device-width:763px) and (max-device-width: 2000px)  {
-    
-}
+
 
 
 /* {

@@ -20,11 +20,11 @@ const Header = () => {
               <Link to="/blog" className=" nav-link">Blog</Link>
               <Link to="/contact" className="nav-link">Contact</Link>
 
-              {loggedInUser.email && (loggedInUser.displayName ? <button className="btn btn-warning me-2">{loggedInUser.displayName}</button>
-                : <button className="btn btn-warning me-2">{loggedInUser.email}</button>)}
+              {loggedInUser.email && (loggedInUser.displayName ? <button className="btn btn-warning me-2  buttonStyleHeader">{loggedInUser.displayName}</button>
+                : <button className="btn btn-warning me-2  buttonStyle">{loggedInUser.email}</button>)}
 
-              {loggedInUser.email ? <button onClick={() => setLoggedInUser({})} className="btn btn-warning logStyle me-1">Logout</button> :
-                <Link to="/login" className="btn btn-warning me-1">Login</Link>
+              {loggedInUser.email ? <button onClick={() => setLoggedInUser({})} className="btn btn-warning logStyle  buttonStyleHeader me-1">Logout</button> :
+                <Link to="/login" className="btn btn-warning me-1 buttonStyleHeader">Login</Link>
               }
 
             </div>
